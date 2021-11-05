@@ -32,4 +32,14 @@ public class UserRegistration {
         matcher = pattern.matcher(emailId);
         return matcher.matches();
     }
+
+
+    // Method for Phone Number Validation
+    public boolean phoneNoValidation (String PhoneNo){
+        String regexPhoneNo = "^[+][0-9]{2}\\s[0-9]{10}$";
+        pattern = Pattern.compile(regexPhoneNo);
+        matcher = pattern.matcher(PhoneNo);
+        return matcher.matches();
+    }
 }
+

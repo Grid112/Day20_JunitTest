@@ -33,4 +33,12 @@ public class UserRegistrationTest {
         Assert.assertEquals(true, result);
         System.out.println(" Email ID is Successfully Validated ");
     }
+
+    // Test for Phone Number Validation
+    @Test
+    public void givenPhoneNo_WhenProper_ShouldReturnTrue(){
+        boolean result = Validate.phoneNoValidation("+91 1234567812");
+        Assert.assertEquals(true, result);
+        System.out.println(" Phone Number is Successfully Validated ");
+    }
 }
