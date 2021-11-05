@@ -15,4 +15,10 @@ public class UserRegistration {
         matcher = pattern.matcher(firstName);
         return matcher.matches();
     }
+    public boolean lastNameValidation (String lastName){
+        String regexLastName = "^[A-Z]{1}[a-z]{2,}$";
+        pattern = Pattern.compile(regexLastName);
+        matcher = pattern.matcher(lastName);
+        return matcher.matches();
+    }
 }

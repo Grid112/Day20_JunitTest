@@ -16,4 +16,10 @@ public class UserRegistrationTest {
             Assert.assertEquals(true, result);
             System.out.println("\n First Name Is Successfully Validated");
     }
+    @Test
+    public void givenLastName_WhenProper_ShouldReturnTrue(){
+        boolean result = Validate.firstNameValidation("Ware");
+        Assert.assertEquals(true, result);
+        System.out.println(" Last Name Is Successfully Validated");
+    }
 }
