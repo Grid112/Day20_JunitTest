@@ -41,4 +41,12 @@ public class UserRegistrationTest {
         Assert.assertEquals(true, result);
         System.out.println(" Phone Number is Successfully Validated ");
     }
+
+    // Test for Password Validation
+    @Test
+    public void givenPassword_WhenProper_ShouldReturnTrue(){
+        boolean result = Validate.passwordValidation("sumitwaresumit");
+        Assert.assertEquals(true, result);
+        System.out.println(" Password is Successfully Validated ");
+    }
 }

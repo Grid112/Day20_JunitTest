@@ -35,10 +35,18 @@ public class UserRegistration {
 
 
     // Method for Phone Number Validation
-    public boolean phoneNoValidation (String PhoneNo){
+    public boolean phoneNoValidation (String phoneNo){
         String regexPhoneNo = "^[+][0-9]{2}\\s[0-9]{10}$";
         pattern = Pattern.compile(regexPhoneNo);
-        matcher = pattern.matcher(PhoneNo);
+        matcher = pattern.matcher(phoneNo);
+        return matcher.matches();
+    }
+
+    // Method for Password Validation
+    public boolean passwordValidation (String password) {
+        String regexPassword = "^[A-Z a-z]{8,}$";
+        pattern = Pattern.compile(regexPassword);
+        matcher = pattern.matcher(password);
         return matcher.matches();
     }
 }
