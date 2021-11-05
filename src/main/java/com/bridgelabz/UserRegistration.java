@@ -44,7 +44,7 @@ public class UserRegistration {
 
     // Method for Password Validation
     public boolean passwordValidation (String password) {
-        String regexPassword = "^[A-Z a-z]{8,}$";
+        String regexPassword = "^[A-Z]{1,}[A-Z a-z]{8,}$";
         pattern = Pattern.compile(regexPassword);
         matcher = pattern.matcher(password);
         return matcher.matches();
