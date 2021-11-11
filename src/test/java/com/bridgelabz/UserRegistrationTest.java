@@ -21,7 +21,7 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_WhenNotProper_ShouldReturnFlase() {
         try {
-            boolean result = UserRegistration.firstNameValidation("utkarsh");
+            boolean result = UserRegistration.firstNameValidation("sumit");
             Assert.assertEquals(false, result);
         } catch (UserRegistrationException e) {
             System.out.println(e);
@@ -52,7 +52,7 @@ public class UserRegistrationTest {
     @Test
     public void givenLastName_WhenProper_ShouldReturnTrue() {
         try {
-            boolean result = UserRegistration.lastNameValidation("Mishra");
+            boolean result = UserRegistration.lastNameValidation("Ware");
             Assert.assertEquals(true, result);
         } catch (UserRegistrationException e) {
             System.out.println(e);
@@ -62,7 +62,7 @@ public class UserRegistrationTest {
     @Test
     public void givenLastName_WhenNotProper_ShouldReturnFalse() {
         try {
-            boolean result = UserRegistration.lastNameValidation("mishra");
+            boolean result = UserRegistration.lastNameValidation("ware");
             Assert.assertEquals(false, result);
         } catch (UserRegistrationException e) {
             System.out.println(e);
